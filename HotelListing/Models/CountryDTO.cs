@@ -12,6 +12,12 @@ namespace HotelListing.Models
 
     }
 
+    public class UpdateCountryDTO : CreateCountryDTO
+    {
+        public IList<CreateHotelDTO> Hotels { get; set; }
+    }
+
+
     public class CreateCountryDTO
     {
    
@@ -23,4 +29,6 @@ namespace HotelListing.Models
         [StringLength(maximumLength: 15, ErrorMessage = "State Name is Too long")]
         public string State { get; set; }
     }
+
+
 }

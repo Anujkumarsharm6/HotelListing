@@ -59,7 +59,7 @@ namespace HotelListing.Controllers
             }
         }
         [HttpPost]
-        [Route("Login")]
+        [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginUserDTO userDTO)
         {
             _logger.LogInformation($"Login Attempt for {userDTO.Email}");
